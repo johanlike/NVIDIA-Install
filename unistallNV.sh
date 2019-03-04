@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/bin/bash
 echo -ne "${lightgreen}Today is:\t\t${red}" `date`; echo ""
 echo -e "${lightgreen}Kernel Information: \t${red}" `uname -smr`
 LOGO=`cat>L<<EOF
