@@ -73,7 +73,7 @@ Exec=sh -c "xrandr --setprovideroutputsource modesetting NVIDIA-0; xrandr --auto
 NoDisplay=true
 X-GNOME-Autostart-Phase=DisplayServer
 EOF
-update-initramfs -u -k $（uname -r）
+update-initramfs -u -k $(uname -r)
 read  -s -n1 -p "现在已经安装完成，输入任意字符即可重启完成更新，如果开机无法正常使用请在开机时按住Ctrl + Alt + F2进入命令行模式bash unistallNV.sh即可卸载。如果你觉得好用欢迎在我主页上给个star:" 
 reboot
 exit 0
