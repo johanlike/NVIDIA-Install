@@ -11,7 +11,7 @@ LOGO=`cat>L<<EOF
 
 EOF`
 cat L&&rm -rf L
-apt update&&apt install linux-headers-$(uname -r)&&apt install nvidia-xconfig ocl-icd-libopencl1 nvidia-cuda-toolkit
+apt update&&apt install linux-headers-$(uname -r)&&apt install nvidia-xconfig ocl-icd-libopencl1 nvidia-cuda-toolkit nvidia-kernel-dkms
 cat>/etc/modprobe.d/nvidia-blacklists-nouveau.conf<<EOF
 blacklist nouveau
 blacklist lbm-nouveau
